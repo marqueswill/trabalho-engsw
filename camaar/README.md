@@ -1,16 +1,16 @@
 # Features:
-[] Autenticação de usuários
-[] Formulários
-    [] Visualização de formulários
-    [] Registro de respostas
-[] Dashboards de admin
-[] Serviços de admin
-    [] Importação de dados (JSON fornecido)
-    [] Gerenciamento de formulários (CRUD)
-    [] Envio de formulários
-    [] Resultados
-        [] Gráficos
-        [] CSV 
+- Autenticação de usuários
+- Formulários
+    - Visualização de formulários
+    - Registro de respostas
+- Dashboards de admin
+- Serviços de admin
+    - Importação de dados (JSON fornecido)
+    - Gerenciamento de formulários (CRUD)
+    - Envio de formulários
+    - Resultados
+        - Gráficos
+        - CSV 
 
 # Histórias de usuário
 ## Como um usuário qualquer eu quero
@@ -30,15 +30,16 @@
 
 ## Como coordenador (admin) eu quero
 1. Importar dados das turmas e cadastrá-las no banco de dados
-2. Criar formulários para professores/alunos
-3. Editar formulários
-4. Apagar formulários
-5. Pesquisar formulários a partir de informações presente neles (nome, semestre, turma, professor, etc.)
-6. Enviar um formulário para turmas selecionadas por mim (opções de filtro como professor, semestre)
-7. Agendar o envio de um formulário
-8.  Visualizar templates de formulários criados por mim
-9.  Visualizar formulários que foram enviados
-10. Aplicar filtros na visualização de formulários templates
-11. Aplicar filtros na visualização de formulários enviados
-12. Baixar as respostas de um formulário em um arquivo CSV
-13. Visulizar gráficos das respostas de um formulário enviado
+2. Ter acesso a um dashboard em que eu possa importar dados das turmas, editar e enviar formulários e salvar as respostas de formulários 
+4. Criar formulários para professores/alunos
+5. Editar formulários
+6. Apagar formulários
+7. Pesquisar formulários a partir de informações presente neles (nome, semestre, turma, professor, etc.)
+8. Enviar um formulário para turmas selecionadas por mim (opções de filtro como professor, semestre)
+9. Agendar o envio de um formulário
+10.  Visualizar templates de formulários criados por mim
+11.  Visualizar formulários que foram enviados
+12. Aplicar filtros na visualização de formulários templates
+13. Aplicar filtros na visualização de formulários enviados
+14. Baixar as respostas de um formulário em um arquivo CSV
+15. Visulizar gráficos das respostas de um formulário enviado
