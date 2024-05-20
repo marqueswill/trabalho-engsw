@@ -37,8 +37,8 @@
 7. Pesquisar formulários a partir de informações presente neles (nome, semestre, turma, professor, etc.)
 8. Enviar um formulário para turmas selecionadas por mim (opções de filtro como professor, semestre)
 9. Agendar o envio de um formulário
-10.  Visualizar templates de formulários criados por mim
-11.  Visualizar formulários que foram enviados
+10. Visualizar templates de formulários criados por mim
+11. Visualizar formulários que foram enviados
 12. Aplicar filtros na visualização de formulários templates
 13. Aplicar filtros na visualização de formulários enviados
 14. Baixar as respostas de um formulário em um arquivo CSV
