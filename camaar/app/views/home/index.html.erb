@@ -8,12 +8,16 @@
   <div id="formContent">
   
    
-    <%= image_tag("logo-unb.png",alt: 'Avaliacao', class: "logo") %>
+    <%= image_tag("logo-unb.png",alt: 'Avaliacao', class: "logo",width: 300, height: 150) %>
    
     <form>
-      <input type="text" id="matricula" class="fadeIn second" name="matricula" placeholder="Matrícula">
-      <input type="text" id="senha" class="fadeIn third" name="Senha" placeholder="Senha">
-      <input type="submit" class="fadeIn fourth" value="Log In">
+      <input type="text" id="matricula" class="matricula" name="matricula" placeholder="Matrícula">
+      <input type="text" id="senha" class="senha" name="senha" placeholder="Senha">
+      <div class="submit-container">
+      <input type="submit" class="submit-login" value="Log In">
+      <input type="submit" class="submit-register" value="Register">
+      </div>
+      <div class="watermark">Caamar</div>
     </form>
 
     <div id="formFooter">
