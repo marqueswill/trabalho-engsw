@@ -1,2 +1,36 @@
-<h1>Homepage</h1>
-<p>Hello World!</p>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<%= stylesheet_link_tag "index.css" %>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+  
+   
+    <%= image_tag("logo-unb.png",alt: 'Avaliacao', class: "logo",width: 300, height: 150) %>
+   
+    <form>
+      <input type="text" id="matricula" class="matricula" name="matricula" placeholder="Matrícula">
+      <input type="text" id="senha" class="senha" name="senha" placeholder="Senha">
+      <div class="submit-container">
+      <input type="submit" class="submit-login" value="Log In">
+      <input type="submit" class="submit-register" value="Register">
+      </div>
+      <div class="watermark">Caamar</div>
+    </form>
+
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Esqueceu a senha?</a>
+    </div>
+
+  </div>
+</div>
+
+    <%# <h1>Simple Form</h1> %>
+    <%# <%= simple_form_for @usuario do |f| %> %>
+        <%# <%= f.input :username%> %>
+        <%# <%= f.input :password%> %>
+        <%# <%= f.button :submit%> %>
+        <%# <%end %> %>
