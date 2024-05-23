@@ -13,7 +13,10 @@
    
     <form>
       <input type="text" id="matricula" class="matricula" name="matricula" placeholder="Matrícula">
-      <input type="text" id="senha" class="senha" name="senha" placeholder="Senha">
+        <div class="input-password">
+          <input type="password" id="password" class="input-field" autocomplete="off" placeholder="Senha">
+                <%# <i class="bx bx-lock-alt icon" id="show-password"></i> %>
+          </div>
       <div class="submit-container">
       <input type="submit" class="submit-login" value="Log In">
       <input type="submit" class="submit-register" value="Register">
