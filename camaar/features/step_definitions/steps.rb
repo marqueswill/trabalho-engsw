@@ -19,11 +19,11 @@ When (/^(.*) within (.*[^:]):$/) do |step, parent, table_or_string|
   with_scope(parent) { When "#{step}:", table_or_string }
 end
 
-Given (/^(?:|I )am on the page (.+)$/) do |page_name|
+Given (/^(?:|I )am on the page "(.+)"$/) do |page_name|
   visit path_to(page_name)
 end
 
-When (/^(?:|I )go to (.+)$/) do |page_name|
+When (/^(?:|I )go to "(.+)$"/) do |page_name|
   visit path_to(page_name)
 end
 
@@ -49,9 +49,15 @@ Given "the following coordinator exists:" do |table|
   end
 end
 
-Given "the following movies exist:" do |table|
-  table.hashes.each do |movie|
-    Movie.create!(movie)
+Given "the following student exists:" do |table|
+  table.hashes.each do |student|
+    Student.create!(student)
+  end
+end
+
+Given "the following user exists:" do |table|
+  table.hashes.each do |student|
+    User.create!(student)
   end
 end
 
@@ -206,7 +212,7 @@ Then (/^the "([^"]*)" checkbox(?: within (.*))? should not be checked$/) do |lab
   end
 end
 
-Then (/^(?:|I )should be on the page (.+)$/) do |page_name|
+Then (/^(?:|I )should be on the page "(.+)"$/) do |page_name|
   current_path = URI.parse(current_url).path
   if current_path.respond_to? :should
     current_path.should == path_to(page_name)
