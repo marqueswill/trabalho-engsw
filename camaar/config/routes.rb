@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   get 'home/index'
   # devise_for :users
-  resources :users
+  #resources :users
 
-  devise_for :users,
+  devise_for :users,controllers: { registrations: 'users/registrations' },
   :path => 'users',
   :path_names => {
     :sign_in => 'login',
