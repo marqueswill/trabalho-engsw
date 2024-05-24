@@ -5,7 +5,7 @@
  <h2>Forgot your password?</h2>
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |form| %>
   <%= form.text_field :email, id: "email", class: "email", placeholder: "Email", required: true, autofocus: true, autocomplete: "off" %>
-  <%= form.submit "Send me reset password instructions", class: "submit-login" %>
+  <%= form.submit "Send me reset password instructions", class: "submit-register" %>
   <% end %>
     <div class="watermark">
       Caamar

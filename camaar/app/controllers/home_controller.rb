@@ -5,7 +5,7 @@ class HomeController < ApplicationController
   end
 
   def login
-    redirect_to 'users/recover-password/new/'
+    redirect_to 'users/register'
   end
 
 end
