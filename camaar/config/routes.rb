@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   get 'home/index'
+  get 'layouts/page'
+  get 'layouts/form_student'
   # devise_for :users
   #resources :users
 
-  devise_for :users,controllers: { registrations: 'users/registrations' },
+  devise_for :users, controllers: { registrations: 'users/registrations' },
   :path => 'users',
   :path_names => {
     :sign_in => 'login',
