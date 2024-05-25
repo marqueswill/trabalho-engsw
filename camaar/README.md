@@ -1,3 +1,6 @@
+# Figma (base do Frontend):
+[Figma - Willyan Marques](https://www.figma.com/design/kIW8LmzqajgAQVigrLX21y/Camaar-G01?node-id=0-1&t=H1Mo40dyNMOK5nv3-0)
+
 # Features:
 - Autenticação de usuários
 - Formulários
