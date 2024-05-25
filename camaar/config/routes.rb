@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'home/index'
   get 'layouts/page'
   get 'layouts/form_student'
+  get 'layouts/importdata'
   # devise_for :users
   #resources :users
 
