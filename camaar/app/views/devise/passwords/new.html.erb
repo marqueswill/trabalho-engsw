@@ -7,7 +7,7 @@
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |form| %>
   <%= form.error_notification %>
   <%= form.text_field :email, id: "email", class: "email", placeholder: "Email", required: true, autofocus: true, autocomplete: "off" %>
-  <%= form.submit "Send me reset password instructions", class: "submit-register" %>
+  <%= form.submit "Send me reset password instructions", class: "submit-reset" %>
   </div>
   <div class="watermark">
     Caamar
@@ -17,23 +17,3 @@
 </div>
 
 
-
-
-
-
-
-
-
-<%# <%= stylesheet_link_tag "forgot-password.css" %> %>
-<%# <!------ Include the above in your HEAD tag ----------> %>
-<%#  %>
-<%# <div class="wrapper fadeInDown"> %>
- <%# <h2>Forgot your password?</h2> %>
-<%# <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |form| %> %>
-  <%# <%= form.text_field :email, id: "email", class: "email", placeholder: "Email", required: true, autofocus: true, autocomplete: "off" %> %>
-  <%# <%= form.submit "Send me reset password instructions", class: "submit-register" %> %>
-  <%# <% end %> %>
-    <%# <div class="watermark"> %>
-      <%# Caamar %>
-    <%# </div> %>
-<%# </div> %>
