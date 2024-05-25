@@ -1,13 +1,10 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <%= stylesheet_link_tag "login.css" %>
 <!------ Include the above in your HEAD tag ---------->
 
 <div class="wrapper fadeInDown">
   <div id="formContent">
     <%= image_tag("logo-unb.png",alt: 'Avaliacao', class: "logo",width: 300, height: 150) %>
-    <%= form_for @user do |form| %>
+<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |form| %>
   <%= form.text_field :email, id: "email", class: "email", placeholder: "Email", required: true, autofocus: true, autocomplete: "off" %>
   <%= form.text_field :password, id: "password", class: "password", placeholder: "Senha", required: true, autofocus: true, autocomplete: "off" %>
     <%= form.submit "Log In", class: "submit-login" %>
@@ -25,24 +22,24 @@
 
 
 
-<h2>Log in</h2>
-
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-    <%= f.input :password,
-                required: false,
-                input_html: { autocomplete: "current-password" } %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+<%# <h2>Log in</h2> %>
+<%#  %>
+<%# <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %> %>
+  <%# <div class="form-inputs"> %>
+    <%# <%= f.input :email, %>
+                <%# required: false, %>
+                <%# autofocus: true, %>
+                <%# input_html: { autocomplete: "email" } %> %>
+    <%# <%= f.input :password, %>
+                <%# required: false, %>
+                <%# input_html: { autocomplete: "current-password" } %> %>
+    <%# <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %> %>
+  <%# </div> %>
+<%#  %>
+  <%# <div class="form-actions"> %>
+    <%# <%= f.button :submit, "Log in" %> %>
+  <%# </div> %>
+<%# <% end %> %>
+<%#  %>
+<%# <%= render "devise/shared/links" %> %>
 
