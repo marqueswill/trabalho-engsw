@@ -1,5 +1,5 @@
-Feature: Import SIGAA data
+Feature: Registers students data on the system
 
-As a Coordinator
-I want to update the existing database with the current data from SIGAA
-So that I can correct the system's database
+As an Administrator
+I want to register participants data into the system
+So that they can create accounts on the CAMAAR system

@@ -5,7 +5,7 @@ Feature: Forms to answer page
     So that I can choose which one to respond to
 
     Background: forms have been assigned to classes
-        Given the following forms exist:
-            | questions | role    | open | class | template |
-            | {}        | Student | True | 1     | 1        |
+        Given that a form existsw
+
+
     Scenario: Student tries to fill and submit a form

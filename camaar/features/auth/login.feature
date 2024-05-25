@@ -5,12 +5,9 @@ Feature: Login
     So that I can respond to forms or manage the system
 
     Background: User has been added to the database
-        Given the following student exists:
-            | name                   | course               | registration | education     | occupation |
-            | Ana Clara Jordao Perna | COMPUTER SCIENCE/CIC | 190084006    | undergraduate | student    |
+        Given that there are users in system
+
         Given the following user exists:
-            | id | email              | password |
-            | 1  | acjpjvjp@gmail.com | 123456   |
 
     Scenario Outline: User logs in with valid credentials
         Given I am on the page "login"
