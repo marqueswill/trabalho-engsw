@@ -6,6 +6,6 @@ Feature: Forms to answer page
 
     Background: forms have been assigned to classes
         Given the following forms exist:
-            | class | questions |
-
-    Scenario: Student
+            | questions | role    | open | class | template |
+            | {}        | Student | True | 1     | 1        |
+    Scenario: Student tries to fill and submit a form
